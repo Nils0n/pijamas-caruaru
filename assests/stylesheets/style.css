@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
 /*RESET*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-
-
-
 /*BASE*/
 
-html{
-  font-family: 'Calistoga', cursive , sans-serif;
+html {
+  font-family: 'Calistoga', cursive, sans-serif;
 }
 
-#header{
+#header {
   background-color: hsla(345, 6%, 13%, 1);
 }
 
-#header .container{
+#header .container {
   display: flex;
   justify-content: space-around;
 }
@@ -40,7 +37,7 @@ section {
   flex-direction: column;
 }
 
-.container .title{
+.container .title {
   display: flex;
   color: #fff;
   align-items: center;
@@ -49,18 +46,17 @@ section {
   top: 1rem;
 }
 
-.toogle{
+.toogle {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.text-container{
+.text-container {
   border: 1px solid #00000033;
   width: 20.9375rem;
   display: flex;
-  margin:3.93rem auto;
-  
+  margin: 3.93rem auto;
 }
 
 .text-container p {
@@ -68,7 +64,7 @@ section {
   text-align: center;
 }
 
-section .options{
+section .options {
   width: 18.06rem;
   height: 2.6875rem;
   background-color: hsla(57, 53%, 84%, 1);
@@ -76,18 +72,18 @@ section .options{
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-#menu{
+#menu {
   display: none;
 }
 
-.icon-close{
-  display: none;
+.icon-close {
+  visibility: hidden;
 }
 
-#menu.show{
+nav.show #menu {
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -97,6 +93,11 @@ section .options{
   background-color: #fff;
 }
 
-#menu ul li{
+nav.show .icon-close {
+  visibility: visible;
+  position: fixed;
+}
+
+#menu ul li {
   margin: 2rem auto;
 }
