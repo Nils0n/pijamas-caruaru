@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+/*RESET*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+/*BASE*/
+
+html{
+  font-family: 'Calistoga', cursive , sans-serif;
+}
+
+#header{
+  background-color: hsla(345, 6%, 13%, 1);
+}
+
+#header .container{
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .title{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  position: relative;
+  right: 1.5rem;
+  top: 1rem;
+}
+
+.toogle{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.text-container{
+  border: 1px solid #00000033;
+  width: 20.9375rem;
+  display: flex;
+  margin:3.93rem auto;
+  
+}
+
+.text-container p {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+section .options{
+  width: 18.06rem;
+  height: 2.6875rem;
+  background-color: hsla(57, 53%, 84%, 1);
+  margin: 1.1875rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#menu{
+  display: none;
+}
+
+.icon-close{
+  display: none;
+}
+
+#menu.show{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+#menu ul li{
+  margin: 2rem auto;
+}
