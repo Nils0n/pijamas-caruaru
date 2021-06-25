@@ -119,9 +119,9 @@ nav.show .icon-close {
   display: flex;
   width: 100vw;
   background: hsla(182, 37%, 58%, 1);
-
-  align-items: flex-end;
+  position: absolute;
   justify-content: center;
+  bottom: 0;
 }
 
 #footer i {
